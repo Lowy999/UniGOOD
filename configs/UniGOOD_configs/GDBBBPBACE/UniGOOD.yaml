@@ -1,0 +1,23 @@
+includes:
+  - base.yaml
+model:
+  model_name: UniGOODvGIN
+  dropout_rate: 0
+ood:
+  ood_alg: ERM
+  ood_param: 0.7
+  extra_param:
+    - 1 # l
+    - 1 # u
+    - 10
+    - 1
+    - 1
+    - 1
+  wild_data: false
+train:
+  pre_train: 5
+  max_epoch: 10
+  lr: 0.001
+  weight_decay: 0.0
+log_file: exp_0
+clean_save: true

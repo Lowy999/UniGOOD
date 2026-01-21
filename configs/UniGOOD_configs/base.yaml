@@ -1,0 +1,43 @@
+task: train
+random_seed: 123
+exp_round: null
+log_file: default
+gpu_idx: 0
+ckpt_root: null
+ckpt_dir: null
+save_tag: null
+other_saved: null
+clean_save: False
+pytest: False
+pipeline: Pipeline
+num_workers: 0
+train:
+  weight_decay: 0.
+  save_gap: 10
+  tr_ctn: False
+  epoch: 0
+  alpha: 0.2  # parameter for DANN
+  stage_stones: []
+  pre_train: 0
+  early_stop: 200
+  eta_min: 1e-4
+  mile_stones: [300]
+model:
+  dim_hidden: 256
+  num_heads: 8
+  dim_ffn: 256
+  dropout_rate: 0.5
+dataset:
+  dataloader_name: BaseDataLoader
+  dataset_root: null
+  generate: False
+  dim_node: null
+  dim_edge: null
+  num_classes: null
+  num_envs: null
+  feat_dims: null
+  edge_feat_dims: null
+  pi_co: 0.5
+  pi_out: 0.1
+ood:
+  extra_param: null

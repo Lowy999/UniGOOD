@@ -1,6 +1,7 @@
 # Unifying Graph Out-of-Distribution Generalization and Detection through Spectral Contrastive Invariant learning
 
 [![License][license-image]][license-url]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18327040.svg)](https://doi.org/10.5281/zenodo.18327040)
 
 This is the official code for the implementation of "Unifying Graph Out-of-Distribution Generalization and Detection through Spectral Contrastive Invariant learning"
 which is accepted by WWW 2026.
